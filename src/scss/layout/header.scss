@@ -1,0 +1,10 @@
+.header {
+  &__main-content {
+    .logo-container {
+      width: 50%;
+      svg {
+        color: $base-red;
+      }
+    }
+  }
+}
