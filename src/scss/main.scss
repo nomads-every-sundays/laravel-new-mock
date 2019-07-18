@@ -1,1 +1,10 @@
-@import './common/reset';
+/**
+  @description This is the command center for SCSS imports
+ */
+
+@import './vendor/manifest';
+@import './abstract/manifest';
+@import './common/manifest';
+@import './components/manifest';
+@import './layout/manifest';
+@import './pages/manifest';
