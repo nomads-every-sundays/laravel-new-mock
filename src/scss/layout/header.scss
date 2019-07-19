@@ -6,6 +6,12 @@
         color: $base-red;
       }
     }
+
+    .content {
+      .title {
+        font-family: 'Miriam Libre Regular', $base-fonts;
+      }
+    }
   }
 
   &__search {
