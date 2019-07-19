@@ -1,26 +1,64 @@
 .header {
+  &__social-links {
+    display: none;
+  }
+
   &__main-content {
-    .logo-container {
-      width: 50%;
-      svg {
-        color: $base-red;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 1px $base-grey;
+
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .logo-container {
+        width: 18%;
+        svg {
+          color: $base-red;
+          border-radius: 1px;
+        }
+      }
+
+      .text-content {
+        .title {
+          font-family: 'Miriam Libre Regular', $base-fonts;
+          font-weight: 600;
+          margin: 0 auto 0 1rem;
+          font-size: 1.5rem;
+        }
+        .sub-title {
+          display: none;
+          font-family: 'Miriam Libre Regular', $base-fonts;
+        }
       }
     }
 
-    .content {
-      .title {
-        font-family: 'Miriam Libre Regular', $base-fonts;
-      }
+    .mobile-nav-icon {
+      font-size: 3rem;
+      color: $base-grey;
     }
   }
 
   &__search {
+    display: none;
     .search-input {
-
     }
 
     .search-icon {
 
     }
+  }
+
+  &__main-nav {
+    display: none;
   }
 }

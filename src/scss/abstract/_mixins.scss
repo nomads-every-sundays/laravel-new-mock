@@ -18,3 +18,17 @@ $desktop-width: 1600px;
     }
   }
 }
+
+
+@mixin responsive-image() {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+@mixin card-content-mod($type) {
+  @if ('dark' == $type) {
+
+  }
+}
