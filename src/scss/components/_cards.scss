@@ -77,10 +77,10 @@
       .input-container {
         width: 100%;
         input {
-          width: 70%;
+          width: 65%;
           padding: 1.37rem 1.5rem;
           border: none;
-          border-bottom: white solid 4px;
+          border-bottom: white solid 3px;
           border-top-left-radius: 2px;
           border-bottom-left-radius: 2px;
           margin-top: 3rem;
@@ -88,11 +88,10 @@
 
         button {
           font-family: 'Miriam Libre Regular', $base-fonts;
-          width: 30%;
+          width: 35%;
           padding: 1.5rem;
           background: #d6514d;
           border: none;
-          border-bottom: #d6514d 1px solid;
           border-radius: 2px;
           color: white;
           line-height: 1.2;
@@ -115,4 +114,17 @@
 
 .card-red {
   background: $base-red;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main__cards .card:first-child {
+  //margin: 10rem auto 2rem;
+  grid-column: 1 / span 2;
+  //grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+  //grid-row: <start-line> / <end-line> | <start-line> / span <value>;
 }
